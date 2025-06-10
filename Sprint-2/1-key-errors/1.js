@@ -2,7 +2,7 @@
 
 // Why will an error occur when this program runs?
 // =============> write your prediction here
-
+/*An error will occur because the program logs the parameter decimalNumber instead of the function*/
 // Try playing computer with the example to work out what is going on
 
 function convertToPercentage(decimalNumber) {
