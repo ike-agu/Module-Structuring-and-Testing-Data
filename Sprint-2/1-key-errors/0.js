@@ -10,10 +10,10 @@ If I attempt to run the program, It will generate a SyntaxError stating that 'st
 // interpret the error message and figure out why an error is occurring
 // - The error is a SyntaxError stating that 'str' has already been declared.
 
-function capitalise(str) {
-  let str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
-}
+// function capitalise(str) {
+//   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
+//   return str;
+// }
 
 // =============> write your explanation here
 // To solve the Error, we can either store the string interpolation with a different variable name or we can return the string interpolation if we don't intend to reuse it.
