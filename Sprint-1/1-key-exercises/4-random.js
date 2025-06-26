@@ -9,17 +9,27 @@ console.log(num)
 
 // Try breaking down the expression and using documentation to explain what it means
 /*
-   1.- Math.floor(): will round down and return the largest integer less than or equal to a given number. I.e It rounds down a number to the nearest integer.
-   2.- Math.random * 100: will return a random floating number between 0(inclusive) and 100 (exclusive).I.e It will always return a decimal number lower than 100
-   3.- (maximum - minimum + 1): here we are Subtracting 1 from 100 and adding 1 to 99 which equals to 100 which is the total count of our range from 1-100.
-   4.- + 1 : here we are shifting the range of random numbers to become 1 - 101, excluding 101.
+1. Math.random() generates a random decimal number between 0 (inclusive) and 1 (exclusive), e.g. 0.3749....
+2. maximum - minimum + 1 calculates the total number of possible values.
+So: 100 - 1 + 1 = 100, which means you want 100 possible values (from 1 to 100).
+3. You then multiply the random number by 100. This gives a number between 0 and 99.999...
+4. Math.floor(...) rounds it down to the nearest integer — so you now get a number from 0 to 99.
+5. Finally, you add minimum (which is 1), so the final number ranges from 1 to 100 inclusive.
 */
 // It will help to think about the order in which expressions are evaluated
 /*
-   1.- math.random() generates a number between 0 and 1 excluding 1.
-   2.- then I subtract minimum from maximum and add 1, making it 100
-   3.- then I multiply the value of math.random() by 100
-   4.- then I use math.floor to round down the value of math.random() to an integer starting from 1 to 100 inclusive because of the +1 at the end.
+ORDER OF EVALUATION
+
+1. maximum - minimum + 1
+This is evaluated first to determine the range of possible values. Example: 100 - 1 + 1 = 100.
+2. Math.random()
+Generates a random decimal number between 0 and 1 (not including 1).Example: 0.723.
+3. Multiplication: Math.random() * (maximum - minimum + 1)
+JavaScript now multiplies the random number by the range. Example: 0.723 * 100 = 72.3.
+4. Math.floor(...)
+Rounds down the result of the multiplication to the nearest integer. Example: Math.floor(72.3) = 72.
+5. Addition: ... + minimum
+Finally, JavaScript adds the minimum to shift the range correctly. Example: 72 + 1 = 73.
 */
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 /*
