@@ -3,7 +3,7 @@ const penceString = "399p";//initialises a string variable with the value "399p"
 const penceStringWithoutTrailingP = penceString.substring(
   0,
   penceString.length - 1
-);// removes the last element from the string using subString().
+);// removes the last character from the string using subString().
 
 const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");// returns 399 because the targetLength 3 is equivalent to the length of the string. So no "0" padding will be added.
 const pounds = paddedPenceNumberString.substring(
