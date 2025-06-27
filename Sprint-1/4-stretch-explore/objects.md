@@ -10,7 +10,8 @@ What output do you get?
 Now enter just `console` in the Console, what output do you get back?
 - I get an object: console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
 Try also entering `typeof console`
-- I get a syntaxError: Uncaught SyntaxError: Unexpected identifier 'console'
+- I get 'object' as output
+
 Answer the following questions:
 
 What does `console` store?
