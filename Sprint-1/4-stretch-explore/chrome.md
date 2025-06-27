@@ -18,4 +18,4 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 What effect does calling the `prompt` function have?
 - It displays a dialog box asking What is your name with a cancel and ok Button.
 What is the return value of `prompt`?
-- The return value is undefined
+- The return value is the name typed in the input field.
