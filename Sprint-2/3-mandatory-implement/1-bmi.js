@@ -19,7 +19,7 @@ function calculateBMI(weight, height) {
     let heightSquared = height * height;
     let bmiInDecimals = weight/ heightSquared;
     let bmi = bmiInDecimals.toFixed(1);
-    return bmi
+    return +bmi
 }
 
 // console.log(calculateBMI(102, 1.85));
