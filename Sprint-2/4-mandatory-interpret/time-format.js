@@ -30,12 +30,12 @@ console.log(formatTimeDisplay(61));
 
 // c) What is the return value of pad is called for the first time?
 // =============> write your answer here
-// The return value is 00 because "0".padStart(2, "0") is "00"
+// The return value is "00" because "0".padStart(2, "0") is "00"
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
-// the value is 1 because 61 % 60 = 1
+// the value is "1" because 61 % 60 = 1
 
 // e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
-// The return value is 01 because the value assign to nun is 1. When pad is called, it adds 0 at the start of the num because the length of the string num is currently 1.
+// The return value is "01" because the value assign to nun is 1. When pad is called, it adds 0 at the start of the num because the length of the string num is currently 1.
