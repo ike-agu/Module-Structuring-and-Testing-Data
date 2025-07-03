@@ -44,3 +44,9 @@ test("password must have at least a number (0-9)", () => {
   const result = isValidPassword(password);
   expect(result).toEqual(true);
 });
+
+test("password must have at least one non-alphanumeric symbols: ('!', '#', '$', '%', '.', '*', '&')", () => {
+  const password = "Team1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
+});
