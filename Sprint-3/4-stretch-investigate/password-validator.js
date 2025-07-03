@@ -4,7 +4,7 @@ function passwordValidator(password) {
     return false;
   }
   if (passwords.includes(password)) {
-    return `${password} already used.`;
+    return "Password has already been used before.";
   }
   if (!/[a-z]/.test(password)) {
     return false;
@@ -22,8 +22,8 @@ function passwordValidator(password) {
   return true;
 }
 
-console.log(passwordValidator("Password1!"));
-console.log(passwordValidator("P2!4"));
-console.log(passwordValidator("PasswordAccess1!"));
+// console.log(passwordValidator("Password1!"));
+// console.log(passwordValidator("P2!4"));
+// console.log(passwordValidator("PasswordAccess1!"));
 
 module.exports = passwordValidator;
