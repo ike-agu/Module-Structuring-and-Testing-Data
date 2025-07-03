@@ -4,7 +4,7 @@ function passwordValidator(password) {
     return false;
   }
   if (passwords.includes(password)) {
-    return "Password has already been used before.";
+    return false;
   }
   if (!/[a-z]/.test(password)) {
     return false;
