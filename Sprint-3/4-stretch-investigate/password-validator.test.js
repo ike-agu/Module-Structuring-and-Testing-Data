@@ -25,14 +25,21 @@ test("password has at least 5 characters", () => {
 }
 );
 
-test("password has at least an English uppercase letter",()=>{
-    const password = "Team1!"
-    const result = isValidPassword(password);
-    expect(result).toEqual(true)
+test("password has at least an English uppercase letter (a-z)", () => {
+  const password = "Team1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
 });
 
 
-test("password has at least an English lowercase letter", ()=>{
+test("password has at least an English lowercase letter(A-Z)", () => {
+  const password = "Team1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
+});
+
+
+test("password must have at least a number (0-9)", () => {
   const password = "Team1!";
   const result = isValidPassword(password);
   expect(result).toEqual(true);
