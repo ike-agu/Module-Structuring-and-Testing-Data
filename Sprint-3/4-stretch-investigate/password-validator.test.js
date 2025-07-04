@@ -17,7 +17,7 @@ You must breakdown this problem in order to solve it. Find one test case first a
 const isValidPassword = require("./password-validator.js");
 test("password has at least 5 characters", () => {
     // Arrange
-    const password = "12345";
+    const password = "Abc1!";
     // Act
     const result = isValidPassword(password);
     // Assert
@@ -56,5 +56,3 @@ test("password must not be any previous password in the passwords array", ()=> {
   const result = isValidPassword(password);
   expect(result).toEqual(false);
 });
-
-
