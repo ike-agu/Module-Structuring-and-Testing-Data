@@ -1,7 +1,7 @@
 
 function creditCardValidator(cardNumber) {
   let cardNumberArray = cardNumber.split(""); // convert to array of strings
-  let intNumber = cardNumberArray.map((num) => +num); // convert array of strings to array integers
+  let intNumber = cardNumberArray.map((num) => + num); // convert array of strings to array integers
   let sum = 0;
   let regexNum = /^[0-9]+$/;
 
