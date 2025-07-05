@@ -11,6 +11,17 @@ function creditCardValidator(cardNumber) {
     sum += intNumber[i];
   }
 
+  let firstCardNumber = cardNumber[0];
+  let repetitionNumber = 0;
+  for (let i = 0; i < cardNumber.length; i++) {
+    if (cardNumber[i] === firstCardNumber) {
+      repetitionNumber += 1;
+    }
+  }
+  if (repetitionNumber === 16) {
+    return "not valid, all numbers are the same";
+  }
+
   if (cardNumber[cardNumber.length - 1] % 2 == 1)
     return "Invalid card: odd final number";
 
@@ -18,11 +29,8 @@ function creditCardValidator(cardNumber) {
 
   if (cardNumber.length === 16) return "Valid card";
 
-  // for(let i = 0; i < cardNumber.length; i++){
-  //     if(cardNumber[i] === cardNumber[1]) return "Invalid card: Only one type of number provided";
-  // }
 
-  return sum;
+
 }
 
 console.log(creditCardValidator("9999777788880000"));//valid card number
