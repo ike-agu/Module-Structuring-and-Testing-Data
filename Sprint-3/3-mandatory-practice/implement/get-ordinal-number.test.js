@@ -20,13 +20,9 @@ test("Should return '3rd' for 3",()=>{
   expect(getOrdinalNumber(3)).toEqual("3rd");
 })
 
-test("Should return '11th' for 11",()=>{
+test("Should append 'th' to numbers ending in 11, 12, 13", () => {
   expect(getOrdinalNumber(11)).toEqual("11th");
-})
-test("Should return '12th' for 12",()=>{
   expect(getOrdinalNumber(12)).toEqual("12th");
-})
-
-test("Should return '13th' for 13",()=>{
   expect(getOrdinalNumber(13)).toEqual("13th");
-})
+});
+
