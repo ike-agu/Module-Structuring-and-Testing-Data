@@ -10,5 +10,5 @@ function isProperFraction(numerator, denominator) {
       return false;
     }
 }
-console.log(isProperFraction(1, 6));
+// console.log(isProperFraction(-4, 6));
 module.exports = isProperFraction;
