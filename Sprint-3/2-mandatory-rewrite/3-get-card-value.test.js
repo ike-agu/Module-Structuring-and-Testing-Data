@@ -19,5 +19,5 @@ expect(getCardValue("Q♦")).toEqual(10);
 // Case 4: Handle Ace (A):
 // Case 5: Handle Invalid Cards:
 test("should throw an error indicating Invalid card rank.", () => {
-  expect(getCardValue("")).toEqual("Invalid Card rank.");
+  expect(() => getCardValue("")).toThrow("Invalid Card rank.");
 });
