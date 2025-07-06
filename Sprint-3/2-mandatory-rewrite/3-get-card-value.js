@@ -11,7 +11,7 @@ function getCardValue(card) {
     } else if (rank === "J" || rank === "Q" || rank === "K") {
       return 10;
     } else {
-      return "Invalid Card rank.";
+      throw new Error("Invalid Card rank.");
     }
 }
 
