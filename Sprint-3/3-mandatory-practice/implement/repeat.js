@@ -6,5 +6,5 @@ function repeat(str, count) {
   }
 }
 
-console.log(repeat("", -1));
+// console.log(repeat("", -1));
 module.exports = repeat;
