@@ -58,7 +58,7 @@ test("password must not be any previous password in the passwords array", ()=> {
 });
 
 test("fails when password is less than 5 characters", () => {
-  const password = "A1!";
+  const password = "A1!a";
   const result = isValidPassword(password);
   expect(result).toEqual(false);
 });
@@ -86,4 +86,3 @@ test("fails when password has no special character", () => {
   const result = isValidPassword(password);
   expect(result).toEqual(false);
 });
-
