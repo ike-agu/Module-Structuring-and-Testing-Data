@@ -56,3 +56,34 @@ test("password must not be any previous password in the passwords array", ()=> {
   const result = isValidPassword(password);
   expect(result).toEqual(false);
 });
+
+test("fails when password is less than 5 characters", () => {
+  const password = "A1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(false);
+});
+
+test("fails when password has no uppercase letter", () => {
+  const password = "abc1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(false);
+});
+
+test("fails when password has no lowercase letter", () => {
+  const password = "ABC1!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(false);
+});
+
+test("fails when password has no number", () => {
+  const password = "Abc!";
+  const result = isValidPassword(password);
+  expect(result).toEqual(false);
+});
+
+test("fails when password has no special character", () => {
+  const password = "Abc1";
+  const result = isValidPassword(password);
+  expect(result).toEqual(false);
+});
+
