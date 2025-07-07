@@ -25,12 +25,9 @@ function creditCardValidator(cardNumber) {
   if (cardNumber[cardNumber.length - 1] % 2 == 1)
     return "Invalid card: odd final number";
 
-  if (sum < 16) return "Sum less than 16 ";
+  if (sum <= 16) return "Sum is less or equal to 16 ";
 
   if (cardNumber.length === 16) return "Valid card";
-
-
-
 }
 
 console.log(creditCardValidator("9999777788880000"));//valid card number
