@@ -14,3 +14,14 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+/*steps
+- first convert the string to uppercase
+- attach the "_" to each word
+*/
+
+function upperSnakeCase(string){
+  return string.toUpperCase().replaceAll(" ", "_");
+}
+
+console.log(upperSnakeCase("Hello there you are awesome"));
