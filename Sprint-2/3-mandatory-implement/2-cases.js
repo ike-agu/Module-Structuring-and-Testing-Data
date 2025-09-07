@@ -23,5 +23,4 @@
 function upperSnakeCase(string){
   return string.toUpperCase().replaceAll(" ", "_");
 }
-
 console.log(upperSnakeCase("Hello there you are awesome"));
