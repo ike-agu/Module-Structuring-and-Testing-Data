@@ -25,13 +25,17 @@ console.log(formatTimeDisplay(61));
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
+// =============> write your answer here : 0,
+
+// c) What is the return value of pad when called for the first time?
+// =============> write your answer here: "00"; because pad pads the return value with zeros up to the length of 2.
+
+// d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer : the value is 1
 // =============> write your answer here
 
-// c) What is the return value of pad is called for the first time?
-// =============> write your answer here
-
-// d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// - the value of num when pad is called for the last time is 1 because remainingSeconds is 1.
 
 // e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// =============> write your answer here : "01"
+
+// - the return value assigned to num when pad is called for the last time is "01" because remainingSeconds is 1 therefore when passed to pad, it converts it to string and pad it at the start by "0" for the length of 2. Thats why we have the string "01" as final result.
